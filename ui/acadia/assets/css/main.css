@@ -208,14 +208,18 @@ li,
   --tp-red-1: #AF0E2E;
   --tp-red-2: #C41230;
   --tp-red-3: #B70A14;
-  --tp-blue-1: #F1F3F9;
+  --tp-blue-1: #f2f2f2;
   --tp-heading-primary: #161613;
   --tp-heading-2: #031F42;
   --tp-heading-3: #0A1D3A;
   --tp-heading-4: #161821;
   --tp-text-body: #57595F;
-  --tp-theme-primary: #AB0C2F;
+  --tp-theme-primary: #1A73E8;
+  
+  /* Main Color */
   --tp-theme-secondary: #1A73E8;
+  /* Main Color */
+
   --tp-theme-3: #FF7162;
   --tp-theme-4: #B1040E;
   --tp-theme-5: #F0EC51;
@@ -14476,7 +14480,7 @@ a.social-yout {
 }
 
 .tp-counter-4-bg {
-  background-color: #EDEBE5;
+  background-color: #f2f2f2;
   border-radius: 15px;
   padding: 82px 25px 73px 25px;
 }
