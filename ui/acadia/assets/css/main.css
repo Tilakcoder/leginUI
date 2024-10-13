@@ -20877,8 +20877,8 @@ span.dark-border {
 .tp-process-3-bg {
   position: relative;
   z-index: 1;
-  padding-top: 110px;
-  padding-bottom: 195px;
+  padding-top: 80px;
+  /* padding-bottom: 195px; */
 }
 .tp-process-3-wrap p {
   font-size: 17px;
