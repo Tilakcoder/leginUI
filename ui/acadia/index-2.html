@@ -42,6 +42,15 @@
       .nice-select::after {
          right: 8px;
       }
+      .switcher{
+         justify-content: center;
+      }
+      .pr-0{
+         padding-right: 0px !important;
+      }
+      .pl-0{
+         padding-left: 0px !important;
+      }
    </style>
 </head>
 
@@ -337,9 +346,9 @@
                                  style="position: block; top: 0px; margin-bottom: 20px; border: none;">
                                  <nav style="width: 100%; padding: 0px; background: none; border: none;">
                                     <ul id="course_details2_nav" style="display: flex;">
-                                       <li style="flex: 1;" class="current"><a href="#info"
+                                       <li style="flex: 1;" class="current"><a onclick="show_form('assingment')"
                                              class="blue-button_padding">Assignment</a></li>
-                                       <li style="flex: 1;" class=""><a href="#curriculum"
+                                       <li style="flex: 1;" class=""><a onclick="show_form('assingment2')" 
                                              class="blue-button_padding">Meeting</a></li>
                                        <li style="flex: 1;" class=""><a href="#instructors"
                                              class="blue-button_padding">Project</a></li>
@@ -414,21 +423,41 @@
                                        <input type="text" placeholder="pages / word count">
                                     </div>
                                  </div>
-                                 <div class="col-md-6">
-                                    <div class="tp-cta-3-form-input">
-                                       <input type="text" placeholder="Course">
+                                 <div style="display: flex; justify-content: center;" class="row col-md-12">
+                                    <div class="col-md-6 pl-0">
+                                       <div class="tp-cta-3-form-input">
+                                          <textarea name="message" placeholder="Description...." style="border-radius: 8px;"></textarea>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 pr-0" style="flex: 1;">
+                                       <div class="col-md-12 pr-0">
+                                          <div class="tp-cta-3-form-input">
+                                             <input type="text" placeholder="Course">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 pr-0">
+                                          <div class="tp-cta-3-form-input">
+                                             <input type="text" placeholder="Deadline">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 pr-0">
+                                          <div class="tp-cta-3-form-input" style="background: white; border-radius: 8px; padding: 3px 20px;">
+                                             <div style="font-size: 14px;">
+                                                Book a personal online session
+                                                <div style="text-align: left;">
+                                                   <input type="radio" name="session" id="yes_session">
+                                                   <label for="yes_session" style="margin-right: 8px;">Yes</label> 
+                                                   <input type="radio" name="session" id="no_session">
+                                                   <label for="no_session">No</label> 
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
                                     </div>
                                  </div>
-                                 <div class="col-md-6">
-                                    <div class="tp-cta-3-form-input">
-                                       <input type="text" placeholder="Deadline">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-cta-3-form-input">
-                                       <textarea name="message" placeholder="Description...."></textarea>
-                                    </div>
-                                 </div>
+                                 <p style="text-align: center; font-size: 12px;">
+                                    By submitting this form you agree to the privacy policy & terms and conditions
+                                 </p>
                                  <div class="col-md-12">
                                     <div class="">
                                        <button class="tp-btn-border"
