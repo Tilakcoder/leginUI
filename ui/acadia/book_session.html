@@ -23,6 +23,42 @@
   <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
   <link rel="stylesheet" href="assets/css/spacing.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    .tp-cta-3-form-input {
+       margin-bottom: 8px;
+    }
+
+    .tp-cta-3-form-input>input {
+       height: 42px;
+       border-radius: 7px;
+    }
+
+    .row>.col-md-6,
+    .row>.col-md-12 {
+       padding: 1px 5px;
+    }
+
+    .nice-select::after {
+       right: 8px;
+    }
+    .switcher{
+       justify-content: center;
+    }
+    .pr-0{
+       padding-right: 0px !important;
+    }
+    .pl-0{
+       padding-left: 0px !important;
+    }
+    .right-side{
+      display: flex;
+      justify-content: end;
+    }
+    .second_card{
+      width: 50%;
+    }
+ </style>
 </head>
 
 <body>
@@ -265,10 +301,324 @@
   <main>
     <!-- course banner start -->
     <section class="tp-course-banner-area tp-course-banner-bg p-relative pt-180 pb-100"
-      data-background="assets/img/course/course-categories/course-categories-bg.png">
+      data-background="assets/img/course/course-categories/course-categories-bg.png" style="padding: 0px; background-size: cover;">
       <div class="tp-course-banner-shape">
         <div class="shape-1">
-          <img src="assets/img/course/course-categories/shape-1.png" alt="" />
+          <img src="assets/images/home.png" alt="" style="transform: rotateY(180deg);" />
+        </div>
+        <div class="right-side">
+          <div class="second_card">
+          <div class="offset-xxl-4 col-xxl-3 offset-xl-2 col-xl-4 col-lg-5 col-md-6"
+                     style="flex: 1; margin: 0px; min-width: 600px; margin-top: 35px;">
+                     <div class="tp-hero-2-course p-relative wow fadeInUp" data-wow-delay=".5s">
+                        <div class="tp-course-item p-relative fix mb-30"
+                           style="backdrop-filter: blur(53px); background: rgba(255, 255, 255, 0.603);">
+                           <!-- <div class="tp-course-teacher mb-15">
+                                 <span><img src="assets/img/teacher/teacher-5.png" alt="">Hilary Ouse</span>
+                                 <span class="discount">-25%</span>
+                              </div> -->
+                           <!-- <div class="tp-course-thumb">
+                                 <a href="course-details-2.html"><img class="course-lightblue" src="assets/img/course/course-thumb-1.jpg" alt=""></a>
+                              </div> -->
+                           <div class="tp-course-content" style="background: transparent; transform: translateY(0px);">
+                              <!-- <div class="tp-course-tag mb-10">
+                                    <span>Chat Now!</span>
+                                 </div> -->
+                              <!-- <div class="tp-course-details-2-nav d-flex align-items-center"
+                                 style="position: block; top: 0px; margin-bottom: 20px; border: none;">
+                                 <nav style="width: 100%; padding: 0px; background: none; border: none;">
+                                    <ul id="course_details2_nav" style="display: flex;">
+                                       <li style="flex: 1;" class="current"><a onclick="show_form('assingment')"
+                                             class="blue-button_padding">Assignment</a></li>
+                                       <li style="flex: 1;" class=""><a onclick="show_form('assingment2')" 
+                                             class="blue-button_padding">Meeting</a></li>
+                                       <li style="flex: 1;" class=""><a href="#instructors"
+                                             class="blue-button_padding">Project</a></li>
+                                    </ul>
+                                 </nav>
+                              </div> -->
+                              <div class="tp-course-meta">
+                                 <span>
+                                    <span>
+                                       <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z"
+                                             stroke="#94928E" stroke-width="1.2" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                          <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2"
+                                             stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                    </span>
+                                    150 Live Projects
+                                 </span>
+                                 <span>
+                                    <span>
+                                       <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z"
+                                             stroke="#94928E" stroke-width="1.2" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                          <path
+                                             d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14"
+                                             stroke="#94928E" stroke-width="1.2" stroke-linecap="round"
+                                             stroke-linejoin="round" />
+                                       </svg>
+                                    </span>
+                                    45 Students
+                                 </span>
+                                 <!-- <span style="position: absolute; right: 1px; padding-right: 10px;">
+                                    <span>
+                                       <select name="service_card" id="">
+                                          <option value="Acadmic">Acadmic</option>
+                                          <option value="Acadmic">Meeting</option>
+                                          <option value="Acadmic">Business</option>
+                                       </select>
+                                    </span>
+                                 </span> -->
+                              </div>
+                              <h4 class="tp-course-title">
+                                 <a href="course-details-2.html">Book session with the experts</a>
+                              </h4>
+                              <div class="row switcher" id="form_showcase">
+
+                              </div>
+                              <div class="row switcher hidden" id="assingment">
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="Name">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="Phone No">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="email" placeholder="Email">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="pages / word count">
+                                    </div>
+                                 </div>
+                                 <div style="display: flex; justify-content: center;" class="row col-md-12">
+                                    <div class="col-md-6 pl-0">
+                                       <div class="tp-cta-3-form-input">
+                                          <textarea name="message" style="border-radius: 8px;" placeholder="Description...."></textarea>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 pr-0" style="flex: 1;">
+                                       <div class="col-md-12 pr-0">
+                                          <div class="tp-cta-3-form-input">
+                                             <input type="text" placeholder="Course">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 pr-0">
+                                          <div class="tp-cta-3-form-input">
+                                             <input type="text" placeholder="Deadline">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 pr-0">
+                                          <div class="tp-cta-3-form-input" style="background: white; border-radius: 8px; padding: 3px 20px;">
+                                             <div style="font-size: 14px;">
+                                                Book a personal online session
+                                                <div style="text-align: left;">
+                                                   <input type="radio" name="session" id="yes_session">
+                                                   <label for="yes_session" style="margin-right: 8px;">Yes</label> 
+                                                   <input type="radio" name="session" id="no_session">
+                                                   <label for="no_session">No</label> 
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p style="text-align: center; font-size: 12px;">
+                                    By submitting this form you agree to the privacy policy & terms and conditions
+                                 </p>
+                                 <div class="col-md-12">
+                                    <div class="">
+                                       <button class="tp-btn-border"
+                                          style="padding: 10px 32px; margin: auto; width: 99%; display: block;">Submit
+                                          my information</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row switcher hidden" id="assingment2">
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="Name">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="Phone No">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="email" placeholder="Email">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="Course">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                    <div class="tp-cta-3-form-input">
+                                       <input type="text" placeholder="Session day availability">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="tp-cta-3-form-input">
+                                       <textarea name="message" style="border-radius: 8px;" placeholder="Description...."></textarea>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <div class="">
+                                       <button class="tp-btn-border"
+                                          style="padding: 10px 32px; margin: auto; width: 99%; display: block;">Submit
+                                          my information</button>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <script>
+                                 var form_card = "assingment2";
+                                 const form_showcase = document.getElementById("form_showcase");
+                                 // function hide_form(obj_id) {
+                                 //    let obj = document.getElementById(obj_id);
+                                 //    let children = Array.from(obj.children).reverse();
+                                    
+                                 //    children.forEach((child, index) => {
+                                 //       setTimeout(() => {
+                                 //             // child.style.opacity = 0;
+                                 //             child.classList.add('hidden_ele');
+                                 //       }, index * 50); // 300ms delay for each iteration
+                                 //    });
+                                    
+                                 //    setTimeout(() => {
+                                 //       // obj.classList.add('hidden');
+                                 //    }, children.length * 50); // Delay based on the total number of children
+                                 // }
+
+                                 // function show_form(obj_id) {
+                                 //    // hide_form(form_card);
+                                 //    // obj_id = form_card;
+                                 //    let obj = document.getElementById(obj_id);
+                                 //    let children = Array.from(obj.children);
+                                 //    hide_form(obj_id);
+                                 //    form_showcase.innerHTML = obj.innerHTML;
+                                    
+                                 //    children.forEach((child, index) => {
+                                 //       setTimeout(() => {
+                                 //          // child.style.transform  = "translateY(0px)";
+                                 //          // child.style.opacity = 1;
+                                 //          child.classList.remove('hidden_ele');
+                                 //       }, index * 100); // 300ms delay for each iteration
+                                 //    });
+                                 // }
+
+                                 // show_form(form_card);
+
+                                 function hide_form(obj_id, speed=100) {
+                                    return new Promise((resolve) => {
+                                       let obj = document.getElementById(obj_id);
+                                       let children = Array.from(obj.children).reverse(); // Reverse the array
+                                       
+                                       children.forEach((child, index) => {
+                                             setTimeout(() => {
+                                                child.classList.add('hidden_ele');
+                                                // If this is the last child, resolve the promise
+                                                if (index === children.length - 1) {
+                                                   // obj.classList.add('hidden');
+                                                   resolve(); // Resolve the promise after the last element
+                                                }
+                                             }, index * speed); // 50ms delay for each iteration
+                                       });
+                                       console.log("COMPLETED");
+                                    });
+                                 }
+
+                                 async function show_form2(obj_id) {
+                                    // Wait for hide_form to finish before proceeding
+                                    console.log("hering");
+                                    await hide_form(obj_id);
+                                    console.log("heringss");
+
+                                    let obj = document.getElementById(obj_id);
+                                    
+                                    // Set the innerHTML after hide_form is done
+                                    form_showcase.innerHTML = obj.innerHTML;
+                                    let children = Array.from(form_showcase.children);
+                                    
+                                    // Remove the 'hidden_ele' class from the children
+                                    children.forEach((child, index) => {
+                                       setTimeout(() => {
+                                             child.classList.remove('hidden_ele');
+                                       }, index * 100); // 100ms delay for each iteration
+                                    });
+                                 }
+
+                                 function show_form(obj_id) {
+                                    let obj = document.getElementById(obj_id);
+                                    hide_form('form_showcase').then(() => {
+                                       hide_form(obj_id, 0).then(() =>{
+                                          console.log("S")
+                                          // let children = Array.from(obj.children);
+                                          
+                                          // Set the innerHTML after hide_form is done
+                                          form_showcase.innerHTML = obj.innerHTML;
+                                          let children = Array.from(form_showcase.children);
+                                          
+                                          // Remove the 'hidden_ele' class from the children
+                                          children.forEach((child, index) => {
+                                                setTimeout(() => {
+                                                   console.log("?")
+                                                   child.classList.remove('hidden_ele');
+                                                }, index * 100); // 100ms delay for each iteration
+                                          });
+                                       })
+                                    });
+
+                                    if (form_showcase.innerHTML.trim() == ""){
+                                       form_showcase.innerHTML = obj.innerHTML
+                                    }
+                                 }
+
+
+                                 show_form(form_card);
+                              </script>
+                              <!-- <div class="tp-course-rating d-flex align-items-end justify-content-between">
+                                    <div class="tp-course-rating-star">
+                                       <p>5.0<span> /5</span></p>
+                                       <div class="tp-course-rating-icon">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                       </div>
+                                    </div>
+                                    <div class="tp-course-pricing home-2">
+                                       <del>$26.00</del>
+                                       <span>$84.00</span>
+                                    </div>
+                                 </div> -->
+                           </div>
+                           <!-- <div class="tp-course-btn home-2">
+                                 <a href="course-details-2.html">Next</a>
+                              </div> -->
+                           <!-- <h4 class="tp-testimonial-2-avatar-title" style="text-align: center; margin-bottom: 10px; margin-top: 10px;"><b>Acadmic Writing</b></h4> -->
+                        </div>
+                     </div>
+                  </div>
+          </div>
         </div>
       </div>
       <div class="container">
